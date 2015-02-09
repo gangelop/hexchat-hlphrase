@@ -1,6 +1,6 @@
-__module_name__ = 'hilight-phrase'
-__module_description__ = 'XChat notification and hilighting on phrases instead of single words'
-__module_version__ = '2.5'
+__module_name__ = 'hlphrase'
+__module_description__ = 'hexchat hilighting on phrases instead of just single words'
+__module_version__ = '1.0'
 
 import hexchat, re
 
