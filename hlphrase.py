@@ -1,5 +1,5 @@
 __module_name__ = 'hlphrase'
-__module_description__ = 'hexchat hilighting on phrases instead of just single words'
+__module_description__ = 'highlights phrases instead of just single words'
 __module_version__ = '1.0'
 
 import hexchat, re
