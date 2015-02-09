@@ -48,7 +48,7 @@ def add_hilight_phrase(word, word_eol, userdata):
     else:
         hexchat.prnt('\x032* "%s" is already being hilighted' % phrase)
     save_list()
-    return hexchat.EAT_XCHAT
+    return hexchat.EAT_HEXCHAT
 
 
 def list_hilight_phrase(word, word_eol, userdata):
@@ -58,7 +58,7 @@ def list_hilight_phrase(word, word_eol, userdata):
     for index, phrase in enumerate(list):
         tab.prnt('\x032 %s -- %s' % (index, phrase))
     tab.prnt('\x032* End of hilight-phrase list')
-    return hexchat.EAT_XCHAT
+    return hexchat.EAT_HEXCHAT
 
 
 def remove_hilight_phrase(word, word_eol, userdata):
@@ -72,7 +72,7 @@ def remove_hilight_phrase(word, word_eol, userdata):
         hexchat.prnt('\x032 %d is not a valid selection' % index)
 
     save_list()
-    return hexchat.EAT_XCHAT
+    return hexchat.EAT_HEXCHAT
 
 def help_list(word, word_eol, userdata):
     hexchat.command('query @hilight')
@@ -81,7 +81,7 @@ def help_list(word, word_eol, userdata):
     tab.prnt('/hilight list - print current list of strings to highlight')
     tab.prnt('/hilight remove <index> - remove list item #<index> from list of strings to hightlist')
     tab.prnt('/hilight help - print this message')
-    return hexchat.EAT_XCHAT
+    return hexchat.EAT_HEXCHAT
 
 
 def choose(word, word_eol, userdata):
@@ -95,7 +95,7 @@ def choose(word, word_eol, userdata):
 
     hexchat.prnt("unknown option: %s, use '/hilight help' for help" % command)
 
-    return hexchat.EAT_XCHAT
+    return hexchat.EAT_HEXCHAT
 
 
 read_list()
